@@ -7,3 +7,5 @@ pandas
 python-dotenv
 langchain-community
 langchain-tavily
+langchain-experimental
+langchain-core
