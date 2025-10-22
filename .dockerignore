@@ -1,0 +1,14 @@
+# Prevent secrets and local clutter from being copied
+.env
+venv/
+__pycache__/
+*.pyc
+*.db
+*.log
+*.tmp
+.cache/
+.coverage
+logs/
+.vscode/
+.idea/
+.tox/
