@@ -63,9 +63,14 @@ def send_email_tool(input: str, use_llm_formatting: bool = True) -> str:
     raw_body = parts[1].strip() if len(parts) > 1 else ""
 
     body = format_email_body(raw_body) if use_llm_formatting else raw_body
+    try:
+        send_email(
+            to_address="solomon.tessema@ionnova.com",
+            subject=subject,
+            body=body
+        )
+        return "Email sent successfully."
+    except Exception as e:
+        return f"Failed to send email: {str(e)}"
 
-    return send_email(
-        to_address=BOSS_EMAIL_ADDRESS,
-        subject=subject,
-        body=body
-    )
+    

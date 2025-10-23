@@ -28,7 +28,7 @@ prompt = PromptTemplate(
 sql_chain = prompt | llm | StrOutputParser()
 
 def generate_sql(question: str):
-    return sql_chain.run({"schema": schema_summary, "question": question})
+    return sql_chain.invoke({"schema": schema_summary, "question": question})
 
 def run_query(query):
     try:
@@ -52,7 +52,7 @@ def format_results(columns, rows):
     return output
 
 
-def read_database(question):
+def read_database_tool(question):
     sql = generate_sql(question)
     columns, rows_or_error = run_query(sql)
 
