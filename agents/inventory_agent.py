@@ -140,7 +140,7 @@ inventory_agent = AgentExecutor(
 # ---------------------------
 # Runner
 # ---------------------------
-def run_inventory_agent(user_input: str) -> Dict[str, Any]:
+def run_inventory_agent(user_input)-> Dict[str, Any]:
     result = inventory_agent.invoke({
         "input": user_input,
         "AGENT_NAME": AGENT_NAME,

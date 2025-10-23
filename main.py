@@ -1,6 +1,6 @@
 
 from agents.inventory_agent import run_inventory_agent
-
+"""
 run_inventory_agent(
     '''
     check our inventory, identify items where sum(quantity) below threshold level, 
@@ -26,6 +26,5 @@ if __name__ == "__main__":
             print("Inventory Agent: Bye!")
             break
         answer = run_inventory_agent(user_input)
-        print(f"Inventory Agent: {answer}")
+        print(f"Inventory Agent: {answer['output']}")
 
-"""
