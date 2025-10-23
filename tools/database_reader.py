@@ -1,4 +1,3 @@
-import re
 from typing import List, Tuple, Any
 from tools.db_connector import SQLiteConnector
 

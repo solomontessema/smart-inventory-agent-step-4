@@ -1,4 +1,4 @@
-# Tool to search the web 
+
 import os
 from langchain_tavily import TavilySearch
 from config import TAVILY_API_KEY
