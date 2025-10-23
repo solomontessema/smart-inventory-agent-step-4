@@ -1,11 +1,5 @@
-# Python dependencies 
-openai
-langchain
-langgraph
-flask
-pandas
-python-dotenv
-langchain-community
-langchain-tavily
-langchain-experimental
-langchain-core
+langchain==0.3.27
+langchain-community==0.3.31
+langchain-tavily==0.2.12
+python-dotenv==1.1.1
+flask==3.1.2
